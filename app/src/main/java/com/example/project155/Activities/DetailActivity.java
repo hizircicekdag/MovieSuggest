@@ -178,7 +178,7 @@ public class DetailActivity extends AppCompatActivity {
         progressBar.setVisibility(View.VISIBLE);
 
         RequestQueue queue = Volley.newRequestQueue(getApplicationContext());
-        String url = "https://api.themoviedb.org/3/movie/" + idFilm + "?api_key=25366487f0b4008929b8fca2a0f5bdbe";
+        String url = "https://api.themoviedb.org/3/movie/" + idFilm + "?api_key=---YourApıKey---";
 
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
                 response -> {
@@ -223,7 +223,7 @@ public class DetailActivity extends AppCompatActivity {
     }
     private void getMovieDetails(int movieId) {
         String url = "https://api.themoviedb.org/3/movie/" + movieId +
-                "?api_key=25366487f0b4008929b8fca2a0f5bdbe";
+                "?api_key=---YourApıKey---";
 
         StringRequest detailRequest = new StringRequest(Request.Method.GET, url,
                 response -> {
@@ -374,7 +374,7 @@ public class DetailActivity extends AppCompatActivity {
                 });
     }
     private void getMovieCast() {
-        String url = "https://api.themoviedb.org/3/movie/" + idFilm + "/credits?api_key=25366487f0b4008929b8fca2a0f5bdbe";
+        String url = "https://api.themoviedb.org/3/movie/" + idFilm + "/credits?api_key=---YourApıKey---";
 
         StringRequest castRequest = new StringRequest(Request.Method.GET, url,
                 response -> {

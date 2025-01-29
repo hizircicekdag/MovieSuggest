@@ -1,8 +1,8 @@
 {
   "project_info": {
-    "project_number": "267473672238",
-    "project_id": "mobilfilm-dcbcf",
-    "storage_bucket": "mobilfilm-dcbcf.firebasestorage.app"
+    "project_number": "---YourProjectNumber---",
+    "project_id": "---YourProjectID---",
+    "storage_bucket": "---YourProjectStorageBucket---"
   },
   "client": [
     {
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCIxJ4tl0kan8zEoFE27Yew06UNTfDAHxE"
+          "current_key": "---YourApıKey---"
         }
       ],
       "services": {

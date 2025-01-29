@@ -175,7 +175,7 @@ public class SuggestActivity extends AppCompatActivity {
     }
     private void searchActors(String query) {
         String url = String.format(Locale.US,
-                "https://api.themoviedb.org/3/search/person?api_key=25366487f0b4008929b8fca2a0f5bdbe&query=%s",
+                "https://api.themoviedb.org/3/search/person?api_key=---YourApıKey---&query=%s",
                 query);
 
         StringRequest request = new StringRequest(Request.Method.GET, url,
@@ -216,7 +216,7 @@ public class SuggestActivity extends AppCompatActivity {
         mRequestQueue.add(request);
     }
     private void loadCategories() {
-        String url = "https://api.themoviedb.org/3/genre/movie/list?api_key=25366487f0b4008929b8fca2a0f5bdbe";
+        String url = "https://api.themoviedb.org/3/genre/movie/list?api_key=---YourApıKey---";
 
         StringRequest request = new StringRequest(Request.Method.GET, url,
                 response -> {
@@ -252,7 +252,7 @@ public class SuggestActivity extends AppCompatActivity {
     private void getSuggestedMovie() {
         try {
             StringBuilder urlBuilder = new StringBuilder(
-                    "https://api.themoviedb.org/3/discover/movie?api_key=25366487f0b4008929b8fca2a0f5bdbe"
+                    "https://api.themoviedb.org/3/discover/movie?api_key=---YourApıKey---"
             );
 
             // Kategori filtresi
@@ -313,7 +313,7 @@ public class SuggestActivity extends AppCompatActivity {
                                     random.nextInt(movieResponse.getResults().size()));
 
                             String detailUrl = String.format(Locale.US,
-                                    "https://api.themoviedb.org/3/movie/%d?api_key=25366487f0b4008929b8fca2a0f5bdbe",
+                                    "https://api.themoviedb.org/3/movie/%d?api_key=---YourApıKey---",
                                     movie.getId());
 
                             StringRequest detailRequest = new StringRequest(Request.Method.GET, detailUrl,

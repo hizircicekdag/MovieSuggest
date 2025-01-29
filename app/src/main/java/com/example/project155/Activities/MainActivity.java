@@ -115,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
         loading3.setVisibility(View.VISIBLE);
 
         // TMDb API'den popüler filmleri çekmek için URL
-        String url = "https://api.themoviedb.org/3/movie/popular?api_key=25366487f0b4008929b8fca2a0f5bdbe&page=1";
+        String url = "https://api.themoviedb.org/3/movie/popular?api_key=---YourApıKey---&page=1";
 
         mStringRequest3 = new StringRequest(Request.Method.GET, url, response -> {
             try {
@@ -163,7 +163,7 @@ public class MainActivity extends AppCompatActivity {
         loading2.setVisibility(View.VISIBLE);
 
         // TMDb genres endpoint'ini kullanıyoruz
-        String url = "https://api.themoviedb.org/3/genre/movie/list?api_key=25366487f0b4008929b8fca2a0f5bdbe";
+        String url = "https://api.themoviedb.org/3/genre/movie/list?api_key=---YourApıKey---";
 
         mStringRequest2 = new StringRequest(Request.Method.GET, url, response -> {
             try {
@@ -202,7 +202,7 @@ public class MainActivity extends AppCompatActivity {
 
         // IMDB puanı filtresini 7.5'a düşürelim ve daha fazla film alalım
         String url = "https://api.themoviedb.org/3/discover/movie?"
-                + "api_key=25366487f0b4008929b8fca2a0f5bdbe"
+                + "api_key=---YourApıKey---"
                 + "&language=en-US"
                 + "&sort_by=vote_average.desc"
                 + "&vote_count.gte=1000"        // En az 1000 oy almış filmler
@@ -368,7 +368,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
     private void searchMovies(String query) {
-        String url = "https://api.themoviedb.org/3/search/movie?api_key=25366487f0b4008929b8fca2a0f5bdbe&query=" + query;
+        String url = "https://api.themoviedb.org/3/search/movie?api_key=---YourApıKey---&query=" + query;
 
         StringRequest searchRequest = new StringRequest(Request.Method.GET, url,
                 response -> {

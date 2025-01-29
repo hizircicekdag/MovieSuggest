@@ -68,7 +68,7 @@ public class CategoryMoviesActivity extends AppCompatActivity {
 
         // API URL for fetching movies by category
         String url = "https://api.themoviedb.org/3/discover/movie" +
-                "?api_key=25366487f0b4008929b8fca2a0f5bdbe" +
+                "?api_key=---YourApıKey---" +
                 "&with_genres=" + categoryId +
                 "&sort_by=popularity.desc";
 
