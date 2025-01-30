@@ -83,7 +83,7 @@ public class CategoryDetailActivity extends AppCompatActivity {
 
         // API URL to get movies
         String url = "https://api.themoviedb.org/3/discover/movie" +
-                "?api_key=25366487f0b4008929b8fca2a0f5bdbe" +
+                "?api_key=---YourApiKey---" +
                 "&with_genres=" + genreId +
                 "&page=1"; // Fetch first page only
 
