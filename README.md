@@ -1,7 +1,7 @@
 # Movie Suggest Android Mobile App
 
 ## Project Description
-Movie Suggest is an **Android mobile application** that utilizes the **TMDB API** to provide movie recommendations to users. Users can add their favorite movies, view detailed information about them, and receive personalized movie suggestions using advanced filters. The app also uses **Firebase** for authentication and database management.
+Movie Suggest is an **Android mobile application** that utilizes the **[TMDB API](https://developer.themoviedb.org/reference/intro/getting-started)** to provide movie recommendations to users. Users can add their favorite movies, view detailed information about them, and receive personalized movie suggestions using advanced filters. The app also uses **Firebase** for authentication and database management.
 
 ## Technologies Used
 - **Android Studio** (Development Environment)
